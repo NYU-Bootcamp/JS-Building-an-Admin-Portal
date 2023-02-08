@@ -17,20 +17,20 @@
       "imageURL": "/assets/tess.jpg"
     },
     {
-      "id": 3,
-      "title": "The Annals of Arathrae",
-      "description": "This anthology tells the intertwined narratives of six fairy tales.",
-      "year": 2016,
-      "quantity": "8",
-      "imageURL": "/assets/arathrae.jpeg"
-    },
-    {
       "id": 4,
       "title": "W∀RP",
       "description": "A time-space anomaly folds matter from different points in earth's history in on itself, sending six unlikely heroes on a race against time as worlds literally collide.",
       "year": 2010,
       "quantity": "4",
       "imageURL": "/assets/warp.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "Book About Cows",
+      "year": 2023,
+      "quantity": "4",
+      "imageURL": "https://imgs.search.brave.com/nOwlmncZycU_AF-QrbxwzyxwSpf09DOHLK5FW9cu1vc/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5Z/YWc4WnFMem8tcklQ/UHRtTmRiUVZRSGFF/OCZwaWQ9QXBp",
+      "description": "What can I say? This book is about cows...."
     }
   ]
 }

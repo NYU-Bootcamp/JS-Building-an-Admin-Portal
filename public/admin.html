@@ -8,8 +8,18 @@
 </head>
 
 <body>
-   <div id="root">
-       
+   <div id="root" class="col-8 mx-auto pt-3">
+       <h1>Books</h1>
+       <ul id="book-list"></ul>
+       <h2>Add a Book</h2>
+       <label for="title">Book Title</label>
+       <input id="title" type="text">
+       <label for="description">Description</label>
+       <input id="description" type="text">
+       <label for="image">Image Source</label>
+       <input id="image" type="text">
+       <input type="submit" value="Create Book" onclick="createBook()"></input>
+
    </div>
     <!-- Our JavaScript Code  -->
     <script src="admin.js"></script>
