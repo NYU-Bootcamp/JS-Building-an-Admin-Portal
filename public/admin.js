@@ -17,18 +17,18 @@ function createList(books){
         book.append(deleteBook)
         bookList.append(book)
         submit.addEventListener('click', async function(){
-            let options = {method: 'PATCH', headers:{'Content-Type': 'application/json'}, body: JSON.stringify({id: element.id, quantity: input.value})}
-            let response = await fetch('http://localhost:3001/updateBook', options)
+            let options = {method: 'PUT', headers:{'Content-Type': 'application/json'}, body: JSON.stringify({quantity: input.value})}
+            let response = await fetch('https://books-api-g91r.onrender.com/books/' + element._id, options)
         })
         deleteBook.addEventListener('click', async function(){
-            let response = await fetch('http://localhost:3001/removeBook/' + element.id, {method: 'DELETE'})
+            let response = await fetch('https://books-api-g91r.onrender.com/books/' + element._id, {method: 'DELETE'})
             book.remove()
         })
     });
 }
 
 async function getBooks(){
-    let response = await fetch('http://localhost:3001/listBooks');
+    let response = await fetch('https://books-api-g91r.onrender.com/books/');
     let data = await response.json()
     createList(data)
 } 
@@ -48,7 +48,7 @@ async function createBook() {
     }
     
     let options = {method: 'POST', headers:{'Content-Type': 'application/json'}, body: JSON.stringify(newBook)}
-    let response = await fetch('http://localhost:3001/addBook', options)
+    let response = await fetch('https://books-api-g91r.onrender.com/books/', options)
     let data = await response.text()
 
     name.value = ""

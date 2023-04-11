@@ -1,12 +1,13 @@
 async function main() {
 
-    let response = await fetch('http://localhost:3001/listBooks')
+    let response = await fetch('https://books-api-g91r.onrender.com/books/')
     let books = await response.json()
 
     books.forEach(renderBook)
 }
 
 function renderBook(book) {
+    console.log(book)
     let bookContainer = document.querySelector('.book-container')
     bookContainer.innerHTML += `
         <div class="col-sm-3">
